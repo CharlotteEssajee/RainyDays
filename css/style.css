@@ -7,7 +7,8 @@ body {
 
 .container {
   width: 80%;
-  margin: auto;
+  margin-left: 100px;
+  display: flex;
 }
 
 header {
@@ -21,8 +22,8 @@ header::after {
 }
 
 .logo {
-  float: left;
-  padding: 10px 0;
+  padding: 20px 0;
+  display: flex;
 }
 
 nav {
@@ -37,17 +38,18 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-left: 70px;
-  padding-top: 18px;
+  justify-content: space-evenly;
+  margin-left: 100px;
+  padding-top: 20px;
 
   position: relative;
 }
 
-nav {
-  text-decoration: none;
+nav a {
   text-transform: uppercase;
-  color: #3f4045;
+  color: #80838c;
   font-size: 16px;
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -55,9 +57,40 @@ nav a:hover {
 }
 
 nav a::before {
-  content: '';
-  display: :block;
-  height: 5px;
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #3f4045;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
   width: 100%;
-  background-color: #3f
+}
+
+h1 {
+  font-family: raleway;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: raleway;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+h3 {
+  font-family: raleway;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
 }
