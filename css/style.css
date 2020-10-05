@@ -2,7 +2,6 @@ body {
   margin: 0;
   background: #f9f9f9;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
 }
 
 .container {
@@ -15,34 +14,13 @@ header {
   background: #d9d2d3;
 }
 
-header::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .logo {
-  padding: 20px 0;
-  display: flex;
+  float: left;
 }
 
-nav {
-  float: right;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
+.icons {
+  text-align: right;
   justify-content: space-evenly;
-  margin-left: 100px;
-  padding-top: 20px;
-
-  position: relative;
 }
 
 nav a {
@@ -50,27 +28,6 @@ nav a {
   color: #80838c;
   font-size: 16px;
   text-decoration: none;
-}
-
-nav a:hover {
-  color: #000;
-}
-
-nav a::before {
-  content: "";
-  display: block;
-  height: 4px;
-  background-color: #3f4045;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-  width: 100%;
 }
 
 h1 {
@@ -88,9 +45,35 @@ h2 {
   text-align: center;
   letter-spacing: 1px;
 }
+
 h3 {
   font-family: raleway;
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
+  justify-content: space-evenly;
+}
+
+.homepage1 {
+  max-width: 300px;
+}
+
+.homepage2 {
+  max-width: 300px;
+}
+
+.men {
+  border-radius: 50%;
+}
+
+.women {
+  border-radius: 50%;
+}
+
+.bergen {
+  border-radius: 50%;
+}
+
+.bryggen {
+  border-radius: 50%;
 }
