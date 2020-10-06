@@ -1,17 +1,19 @@
 body {
-  margin: 0;
+  margin: 0%;
+  padding: 0%;
   background: #f9f9f9;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-  width: 80%;
   margin-left: 100px;
-  display: flex;
+  display: inline-flex;
 }
 
 header {
   background: #d9d2d3;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -20,7 +22,16 @@ header {
 }
 
 .icons {
+  list-style-type: none;
   float: right;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navtext {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
   justify-content: space-evenly;
 }
 
@@ -28,9 +39,6 @@ nav a {
   text-transform: uppercase;
   color: #80838c;
   font-size: 16px;
-}
-
-.navtext {
   text-decoration: none;
 }
 
@@ -58,30 +66,24 @@ h3 {
   justify-content: space-evenly;
 }
 
-.homepage1 {
-  max-width: 629px;
+.hero {
+  display: flex;
 }
 
-.homepage2 {
-  max-width: 629px;
+.hero img {
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
 }
 
-.men {
-  max-width: 200px;
-  border-radius: 50%;
+.shop {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.women {
-  max-width: 200px;
-  border-radius: 50%;
-}
-
-.bergen {
-  max-width: 200px;
-  border-radius: 50%;
-}
-
-.bryggen {
-  max-width: 200px;
+.item img {
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
 }
