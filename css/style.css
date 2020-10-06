@@ -16,10 +16,11 @@ header {
 
 .logo {
   float: left;
+  max-width: 120px;
 }
 
 .icons {
-  text-align: right;
+  float: right;
   justify-content: space-evenly;
 }
 
@@ -27,6 +28,9 @@ nav a {
   text-transform: uppercase;
   color: #80838c;
   font-size: 16px;
+}
+
+.navtext {
   text-decoration: none;
 }
 
@@ -55,25 +59,29 @@ h3 {
 }
 
 .homepage1 {
-  max-width: 300px;
+  max-width: 629px;
 }
 
 .homepage2 {
-  max-width: 300px;
+  max-width: 629px;
 }
 
 .men {
+  max-width: 200px;
   border-radius: 50%;
 }
 
 .women {
+  max-width: 200px;
   border-radius: 50%;
 }
 
 .bergen {
+  max-width: 200px;
   border-radius: 50%;
 }
 
 .bryggen {
+  max-width: 200px;
   border-radius: 50%;
 }
