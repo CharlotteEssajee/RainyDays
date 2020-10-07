@@ -18,7 +18,7 @@ header {
 
 .logo {
   float: left;
-  max-width: 120px;
+  max-width: 100px;
 }
 
 .icons {
@@ -47,7 +47,9 @@ h1 {
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
+  color: #3f4045;
   letter-spacing: 1px;
+  margin: 0px 0px 50px 0px;
 }
 
 h2 {
@@ -55,15 +57,22 @@ h2 {
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
+  color: #3f4045;
   letter-spacing: 1px;
+  margin: 80px 0px 0px 0px;
 }
 
-h3 {
+div h3 {
   font-family: raleway;
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
   justify-content: space-evenly;
+}
+
+ul h3 {
+  font-size: 1rem;
+  text transform: uppercase;
 }
 
 .hero {
@@ -72,8 +81,9 @@ h3 {
 
 .hero img {
   width: 50%;
-  height: 300px;
+  height: 400px;
   object-fit: cover;
+  margin: 0px 0px 80px 0px;
 }
 
 .shop {
@@ -86,4 +96,11 @@ h3 {
   width: 220px;
   height: 220px;
   border-radius: 50%;
+}
+
+.item a {
+  text-decoration: none;
+  font-family: raleway;
+  text-transform: uppercase;
+  color: #3f4045;
 }
