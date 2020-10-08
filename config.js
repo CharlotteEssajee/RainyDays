@@ -2,7 +2,16 @@
 
 
 //Config file with defaults. (name: {default: val|{environment: val}, envVar: string|boolean, parser: function})
-const config = {}
+const config = {
+
+  SENTRY_DSN: {
+    default: {
+      development: null,
+      production: "https://c73997ea848a403ea2c0529072b0a436@o458999.ingest.sentry.io/5457478"
+    }
+  }
+
+}
 
 
 
