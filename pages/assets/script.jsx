@@ -1,4 +1,24 @@
 /*
+Handles making requests to the API.
+*/
+async function api(method, endpoint, data) {
+  var options = {timeout: 20000, baseURL: "/api", method, data, withCredentials: true}
+  if(!["PUT", "POST", "PATCH"].includes(method)) { options.params = data; delete options.data }
+
+  try {
+    return (await axios(endpoint, options)).data
+  }
+  catch (e) {
+    if(e.response.status && [401, 403, 429].includes(e.response.status)) { return window.location.reload() }
+    throw e
+  }
+}
+
+
+
+
+
+/*
 Handles smooth loading.
 */
 var app = Aviation({source: 'a[href]:not([target="_blank"]):not([href^="#"])', skipOnLoad: true})
