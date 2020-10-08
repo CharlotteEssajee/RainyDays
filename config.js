@@ -21,7 +21,7 @@ Parses config & values.
 */
 function parse(config) {
   var result = {}, environment = "production"
-  if(!process.env.NODE_ENV || process.env.NODE_ENV == "development") { environment = "production" }
+  if(!process.env.NODE_ENV || process.env.NODE_ENV == "development") { environment = "development" }
 
   for(var name in config) {
     var settings = config[name], value = null
