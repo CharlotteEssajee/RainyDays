@@ -14,6 +14,8 @@ nav {
   background:#f9f9f9;
   height: 100px;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -29,7 +31,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   line-height: 80px;
-  margin: 0 50px;
+  margin: 0 80px;
 }
 
 nav ul li a {
@@ -42,6 +44,13 @@ nav ul li a {
   list-style-type: none;
   display: inline-block;
   text-decoration: none;
+  display: flex;
+  color: #0a3641;
+  font-size: 25px;
+}
+
+.li a {
+  margin-right: 20px;
 }
 
 h1 {
@@ -80,15 +89,14 @@ div h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; 
 }
 
 .hero-text {
   text-align: center;
   position: absolute;
   font-size: 18px;
-  top: 50px;
-  left: 20px;
+  top: 200px;
+  right: 200px;
   color: #0A3641;
 
 }
