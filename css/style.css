@@ -16,22 +16,22 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-  height: 90px;
+  height: 70px;
   margin-left: 20px
 }
 
 nav ul {
   display: inline-block;
   justify-content: space-evenly;
+  word-spacing: 1cm;
 }
 
 nav ul li {
   display: inline-block;
-  line-height: 80px;
-  margin: 0 80px;
 }
 
 nav ul li a {
@@ -47,10 +47,8 @@ nav ul li a {
   display: flex;
   color: #0a3641;
   font-size: 25px;
-}
-
-.li a {
   margin-right: 20px;
+  word-spacing: 1cm;
 }
 
 h1 {
