@@ -1,43 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0%;
-  padding: 0%;
-  background: #f9f9f9;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-  background-color: #f9f9f9;
-}
-
-.topnav {
-  display: inline;
+nav {
+  background:#f9f9f9;
+  height: 100px;
+  width: 100%;
 }
 
 .logo {
-  float: left;
-  max-width: 100px;
+  height: 90px;
+  margin-left: 20px
 }
 
-.navtext li {
-  list-style-type: none;
+nav ul {
+  display: inline-block;
+  justify-content: space-evenly;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 50px;
+}
+
+nav ul li a {
+  color: #0A3641;
+  font-size: 25px;
+  text-transform: uppercase;
 }
 
 .icons {
   list-style-type: none;
-  float: right;
-  display: flex;
-  justify-content: space-evenly;
+  display: inline-block;
   text-decoration: none;
 }
 
 h1 {
-  font-family: raleway;
+  border: 4px solid white; 
+  padding: 10px 50px; 
+  position: relative; 
+  border-radius: 10px; 
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
-  color: #3f4045;
+  color: #0A3641;
   letter-spacing: 1px;
-  margin: 0px 0px 50px 0px;
 }
 
 h2 {
@@ -58,31 +75,20 @@ div h3 {
   justify-content: space-evenly;
 }
 
-.hero {
-  display: flex;
-}
-
-.hero img {
+.hero-image {
   width: 100%;
-  height: 400px;
-  object-fit: cover;
-  margin: 0px 0px 80px 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
 }
 
-.shop {
+.hero-text {
   text-align: center;
-  display: flex;
-  justify-content: space-evenly;
-}
+  position: absolute;
+  font-size: 18px;
+  top: 50px;
+  left: 20px;
+  color: #0A3641;
 
-.item img {
-  width: 350px;
-  height: 400px;
-}
-
-.item a {
-  text-decoration: none;
-  font-family: raleway;
-  text-transform: uppercase;
-  color: #3f4045;
 }
