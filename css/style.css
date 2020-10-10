@@ -76,14 +76,6 @@ h2 {
   letter-spacing: 1px;
 }
 
-div h3 {
-  font-family: raleway;
-  font-size: 1rem;
-  text-transform: uppercase;
-  text-align: center;
-  justify-content: space-evenly;
-}
-
 .hero-image {
   width: 100%;
   background-position: center;
@@ -108,4 +100,20 @@ div h3 {
   top: 300px;
   right: 200px;
   color: #0A3641;
+}
+
+div h3 {
+  font-family: raleway;
+  font-size: 1rem;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 20px 0px;
+  color: #0A3641;
+}
+
+.copyright-logo {
+  height: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
