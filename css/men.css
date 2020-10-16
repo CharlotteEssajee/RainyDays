@@ -100,14 +100,34 @@ h2 {
 }
 
 /* items */
-.itemlist {
-  text-align: center;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin: 90px 20px;
+.itemlist-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
 }
 
-.item img {
-  width: 350px;
+.itemlist-grid img {
+  height: 400px;
+}
+
+.item, .item-one, .item-two, .item-three {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit );
+}
+
+@media screen and (max-width:1620px) {
+  .itemlist-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width:820px) {
+  .itemlist-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
 }
