@@ -10,17 +10,25 @@
     <body>
       <header></header>
         <main>
-            <div class="container">
-              <h1>Sign in</h1>
-              
-              <label for="email"><h2>Email</h2></label>
-              <input type="text" placeholder="Enter Email">
+          <div class="flex-container">
+<!--Welcome back-->
+            <div class="welcome">
+              <h1>Welcome back</h1>
+              <p class="welcome-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="welcome-text">Cras accumsan eros urna. In hac habitasse platea dictumst.</p>
+              <p class="welcome-text">Nunc vitae neque risus.</p>
+              <p class="welcome-text">Fusce ac ligula fringilla orci facilisis pulvinar.</p>
+            </div>
+<!--Sign In-->
+            <div class="signin">
+              <h3>Sign in</h3>
+                
+              <input type="text" placeholder="Enter Email" class="email">
 
-              <label for="password"><h3>Password</h3></label>
-              <input type="password" placeholder="Enter Password">
+              <input type="password" placeholder="Enter Password" class="password">
 
               <label>
-                <input type="checkbox" checked="checked" name="remember"> Remeber Me
+              <input type="checkbox" checked="checked" name="remember"> Remeber Me
               </label>
 
               <p><a href="#" style="color:dodgerblue">Forgot Pasword?</a></p>
@@ -29,6 +37,7 @@
 
               <p>Don't have an account yet? <a href="signup.html" style="color: dodgerblue">Sign Up</a></p>
             </div>
+          </div>
         </main>
     <footer></footer>
   </body>

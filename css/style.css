@@ -97,53 +97,6 @@ nav ul li a {
   transform: translateX(0%)
 }
 
-/* hero image*/
-.hero-image {
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  font-size: 5em;
-  top: 200px;
-  right: 110px;
-  color: #0A3641;
-}
-
-.hero-text2 {
-  text-align: center;
-  position: absolute;
-  font-size: 1em;
-  top: 300px;
-  right: 200px;
-  color: #0A3641;
-}
-
-h1 {
-  position: relative; 
-  border-radius: 12px; 
-  font-family: 'Poppins', sans-serif;
-  font-size: 80px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #0A3641;
-  letter-spacing: 1px;
-}
-
-h2 {
-  position: relative; 
-  border-radius: 10px; 
-  font-family: 'Poppins', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  color: #0A3641;
-  letter-spacing: 1px;
-}
-
 /* footer */
 div h3 {
   font-family: 'Poppins', sans-serif;

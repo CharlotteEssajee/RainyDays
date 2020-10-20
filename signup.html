@@ -10,20 +10,26 @@
     <body>
       <header></header>
         <main>
-            <div class="container">
-              <h1>Sign up</h1>
+          <div class="flex-container">
+<!--Welcome-->
+            <div class="welcome">
+              <h1>Welcome</h1>
+              <p class="welcome-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="welcome-text">Cras accumsan eros urna. In hac habitasse platea dictumst.</p>
+              <p class="welcome-text">Nunc vitae neque risus.</p>
+              <p class="welcome-text">Fusce ac ligula fringilla orci facilisis pulvinar.</p>
+            </div>
+<!--Sign Up-->
+            <div class="signup">
+              <h3>Sign up</h3>
 
-              <label for="firstname"><h2>First Name</h2></label>
-              <input type="first" placeholder="Enter First Name">
+              <input type="first" placeholder="First Name" class="firstname">
 
-              <label for="lastname"><h2>Last Name</h2></label>
-              <input type="last" placeholder="Enter Last Name">
+              <input type="last" placeholder="Last Name" class="lastname">
 
-              <label for="email"><h4>Email</h4></label>
-              <input type="text" placeholder="Enter Email">
+              <input type="text" placeholder="Email" class="email">
 
-              <label for="password"><h5>Password</h5></label>
-              <input type="password" placeholder="Enter Password">
+              <input type="password" placeholder="Password" class="password">
 
               <label>
                 <input type="checkbox" checked="checked" name="remember"> I accept the 
@@ -37,6 +43,7 @@
 
               <p>Already have an account? <a href="myaccount.html" style="color: dodgerblue">Sign In</a></p>
             </div>
+          </div>  
         </main>
     <footer></footer>
   </body>

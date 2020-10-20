@@ -1,41 +1,85 @@
-.container {
-    background-color: #f9f9f9;
-    margin: 0 auto;
-    width: 500px;
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin: 5rem;
+}
+
+.welcome {
+    flex: 50%;
     text-align: center;
+    background-color: #0A3641;
+}
+
+.signin {
+    flex: 50%;
+    background-color: #E1EBED;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #0A3641;
+}
+
+.signup {
+    flex: 50%;
+    background-color: #E1EBED;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #0A3641;
 }
 
 h1 {
-    font-size: 60px;
-    font-family: 'Poppins', sans-serif;
+    padding-top: 2rem;
+    color: #E1EBED;
+    font-size: 4rem;
+    font-weight: lighter;
 }
 
-h2, h3, h4, h5 {
+h3 {
+    font-size: 4rem;
+    color: #0A3641;
+    font-weight: lighter;
+}
+
+h2, h4, h5 {
     font-size: 25px;
-    font-family: 'Poppins', sans-serif;
     margin: 20px;
+    color: #0A3641;
 }
 
 p, a {
-    font-family: 'Poppins', sans-serif;
     font-size: 15px;
+}
+
+.welcome-text {
+    color: #E1EBED;
 }
 
 label {
     display: block;
-    font-family: 'Poppins', sans-serif;
     font-size: 15px;
     margin: 40px 0px 0px 0px;
+    background-color: #E1EBED;
 }
 
 ::placeholder {
-    font-style: italic;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    background-color: #E1EBED;
+}
 
+.email, .firstname, .lastname, .password {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 2rem;
+    font-size: 1.5rem;
+    background-color: #E1EBED;
 }
 
 button {
-    font-family: 'Poppins', sans-serif;
     font-size: 20px;
 }
