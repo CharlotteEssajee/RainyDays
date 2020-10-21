@@ -43,6 +43,7 @@ h1 {
 
 p {
     color:#0A3641;
+    margin-top: 2rem;
 }
 
 .right {
@@ -58,17 +59,13 @@ p {
 }
 
 .container p {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .input {
     display: block;
     justify-content: space-between;
     margin-bottom: 2rem;
-}
-
-.input-text .input {
-    flex-basis: 45%;
 }
 
 input {
@@ -97,26 +94,32 @@ label {
 
 button {
     background: #0A3641;
-    width: 100px;
+    width: 150px;
     border: none;
     outline: none;
     color: #E1EBED;
-    height: 35px;
+    font-size: 1rem;
+    height: 50px;
     border-radius: 30px;
     margin-top: 20px;
     box-shadow: 0px 5px 15px 0px rgba(228, 230, 231, 0.397);
 }
 
-tr td:first-child {
-    padding-right: 2rem;
+.checkbox {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+    font-size: 0.8rem;
+
+}
+.checkbox input {
+    width: 17px;
+    height: 17px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    overflow: hidden;
 }
 
-tr td {
-    padding-top: 2rem;
-    color: #E1EBED;
-    font-size: 1rem;
-}
-
-::placeholder {
-    color: #8a9192;
-}

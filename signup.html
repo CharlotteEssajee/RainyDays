@@ -7,44 +7,71 @@
     <meta name="description" content="This is a homepage" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-    <body>
-      <header></header>
-        <main>
-          <div class="flex-container">
-<!--Welcome-->
-            <div class="welcome">
-              <h1>Welcome</h1>
-              <p class="welcome-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p class="welcome-text">Cras accumsan eros urna. In hac habitasse platea dictumst.</p>
-              <p class="welcome-text">Nunc vitae neque risus.</p>
-              <p class="welcome-text">Fusce ac ligula fringilla orci facilisis pulvinar.</p>
-            </div>
-<!--Sign Up-->
-            <div class="signup">
-              <h3>Sign up</h3>
-
-              <input type="first" placeholder="First Name" class="firstname">
-
-              <input type="last" placeholder="Last Name" class="lastname">
-
-              <input type="text" placeholder="Email" class="email">
-
-              <input type="password" placeholder="Password" class="password">
-
-              <label>
-                <input type="checkbox" checked="checked" name="remember"> I accept the 
-                    <a href="#" style="color:dodgerblue">terms of use & privacy policy</a>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <div class=container>
+<!--Headline-->
+          <h1>Sign Up</h1>
+<!--Sign In-->
+        <div class="contact-box">
+          <div class="left-faq">
+            <h2>Sign Up</h2>
+            <form>
+<!--Name-->
+              <div class="input">
+                <div class="input-text">
+                  <label>First Name</label>
+                  <input type="text" placeholder="Jane">
+                </div>
+              </div>
+              <div class="input">
+                <div class="input-text">
+                  <label>Last Name</label>
+                  <input type="text" placeholder="Doe">
+                </div>
+              </div>
+<!--Email-->
+              <div class="input">
+                <div class="input-text">
+                  <label>Email</label>
+                  <input type="text" placeholder="janedoe@gmail.com">
+                </div>
+              </div>
+<!--Password-->
+              <div class="input">
+                <div class="input-text">
+                  <label>Password</label>
+                  <input type="password" placeholder="••••••••">
+                </div>
+              </div>
+<!--Forgot Password-->
+              <label class="checkbox">
+                <input type="checkbox" checked="checked" name="Terms"> I accept the 
+                <a href="#" style="color:dodgerblue">terms of use & privacy policy</a>
+              </label>
+              <label class="checkbox">
                 <input type="checkbox" checked="checked" name="newsletter"> Subscribe to our newsletter
               </label>
-
-              <p><a href="#" style="color:dodgerblue">Forgot Pasword?</a></p>
-
-              <button type="button" class="sign in">Sign In</button>
-
-              <p>Already have an account? <a href="myaccount.html" style="color: dodgerblue">Sign In</a></p>
-            </div>
-          </div>  
-        </main>
+<!--Submit button-->
+              <button type="submit">SIGN UP</button>
+              <p>Already have an accout? 
+                <a href="myaccount.html" style="color: dodgerblue">Sign In</a>
+              </p>
+            </form>
+          </div>
+<!--Contact-->
+          <div class="right-contact">
+            <h2>Welcome</h2>
+            <p class="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="right">Cras accumsan eros urna. In hac habitasse platea dictumst.</p>
+            <p class="right">Nunc vitae neque risus.</p>
+            <p class="right">Fusce ac ligula fringilla orci facilisis pulvinar.</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>

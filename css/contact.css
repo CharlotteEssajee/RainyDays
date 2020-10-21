@@ -32,12 +32,12 @@ body {
 
 h1, h2 {
     margin-bottom: 2rem;
+    font-weight: lighter;
 }
 
 h1 {
     font-size: 4rem;
     text-transform: uppercase;
-    font-weight: lighter;
     color: #0A3641;
 }
 
