@@ -7,38 +7,47 @@
     <meta name="description" content="This is a homepage" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-    <body>
-      <header></header>
-        <main>
-          <div class="flex-container">
-<!--Welcome back-->
-            <div class="welcome">
-              <h1>Welcome back</h1>
-              <p class="welcome-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p class="welcome-text">Cras accumsan eros urna. In hac habitasse platea dictumst.</p>
-              <p class="welcome-text">Nunc vitae neque risus.</p>
-              <p class="welcome-text">Fusce ac ligula fringilla orci facilisis pulvinar.</p>
-            </div>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <div class=container>
+<!--Headline-->
+          <h1>Sign In</h1>
 <!--Sign In-->
-            <div class="signin">
-              <h3>Sign in</h3>
-                
-              <input type="text" placeholder="Enter Email" class="email">
-
-              <input type="password" placeholder="Enter Password" class="password">
-
-              <label>
-              <input type="checkbox" checked="checked" name="remember"> Remeber Me
-              </label>
-
-              <p><a href="#" style="color:dodgerblue">Forgot Pasword?</a></p>
-
-              <button type="button" class="sign in">Sign In</button>
-
-              <p>Don't have an account yet? <a href="signup.html" style="color: dodgerblue">Sign Up</a></p>
-            </div>
+        <div class="contact-box">
+          <div class="left-faq">
+            <h2>Sign In</h2>
+            <form>
+              <div class="input">
+<!--Email-->
+                <div class="input-text">
+                  <label>Email</label>
+                  <input type="text" placeholder="janedoe@gmail.com">
+                </div>
+              <div class="input">
+<!--Password-->
+                <div class="input-text">
+                  <label>Password</label>
+                  <input type="text" placeholder="******">
+                </div>
+              </div>
+<!--Submit button-->
+              <button type="submit">SIGN IN</button>
+            </form>
           </div>
-        </main>
+<!--Contact-->
+          <div class="right-contact">
+            <h2>Welcome Back</h2>
+            <p class="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="right">Cras accumsan eros urna. In hac habitasse platea dictumst.</p>
+            <p class="right">Nunc vitae neque risus.</p>
+            <p class="right">Fusce ac ligula fringilla orci facilisis pulvinar.</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
+
