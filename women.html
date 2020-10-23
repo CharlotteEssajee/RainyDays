@@ -3,27 +3,53 @@
   <head>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="css/menandwomen.css" rel="stylesheet" type=text/css>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/b54b0f2f33.js" crossorigin="anonymous"></script>
     <title>RainyDays | Men</title>
     <meta name="description" content="Menswear" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header>
 
+<!--Navbar-->
+    <header class="menu">
+      <div class="menu-wrap">
+        <a href="index.html"> <img src="images/logo.png" alt="Logo for RainyDays" class="logo-img" /></a>
+        <input type="checkbox" id="checkbox">
+        <nav>
+          <ul>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="icons">
+            <ul>
+              <li><a href="search.html"><i class="fas fa-search"></i></a></li>
+              <li><a href="myaccount.html"><i class="fas fa-user-circle"></i></a></li>
+              <li><a href="shoppingcart.html"><i class="fas fa-shopping-bag"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+        <label for="checkbox" class="menu-icon">
+          <i class="fas fa-bars menu-icon"></i>
+        </label>
+      </div> 
     </header>
     <main>
-  <!--Woman header-->
-  <div class="hero" style="position:relative">
 
-    <!--background image-->
-            <img class="hero-image" src="images/herowoman.jpg" alt="hero image"/>
-    
-    <!--image title-->
-            <h1 class="hero-text">Woman</h1>
-          </div>
+<!--Woman Header-->
+      <div class="hero" style="position:relative">
 
-<!--Men jackets-->
+<!--Hero Image-->
+        <img class="hero-image" src="images/herowoman.jpg" alt="hero image"/>
+
+<!--Hero Text-->
+        <h1 class="hero-text">Woman</h1>
+      </div>
+
+<!--Women Jackets-->
+
       <div class="itemlist-grid">
         <div class="item">
             <img src="images/woman.jpg" alt="woman jacket product" />
@@ -43,6 +69,13 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+
+<!--Copyright-->
+    <footer>
+      <div class="copyright">
+      <img src="images/logo.png" alt="Logo for RainyDays" class="copyright-logo" />
+      <h3 class="footer-text"><small> Copyright &copy; 2020 Charlotte Essajee. All rights reserved </small></h3>
+      </div>
+    </footer>
   </body>
 </html>

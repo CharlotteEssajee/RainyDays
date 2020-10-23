@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/shoppingcart.css" rel="stylesheet" type=text/css>
     <script src="https://kit.fontawesome.com/b54b0f2f33.js" crossorigin="anonymous"></script>
     <title>RainyDays | Shopping Cart</title>
@@ -9,18 +10,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header></header>
+
+<!--Navbar-->
+    <header class="menu">
+      <div class="menu-wrap">
+        <a href="index.html"> <img src="images/logo.png" alt="Logo for RainyDays" class="logo-img" /></a>
+        <input type="checkbox" id="checkbox">
+        <nav>
+          <ul>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="icons">
+            <ul>
+              <li><a href="search.html"><i class="fas fa-search"></i></a></li>
+              <li><a href="myaccount.html"><i class="fas fa-user-circle"></i></a></li>
+              <li><a href="shoppingcart.html"><i class="fas fa-shopping-bag"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+        <label for="checkbox" class="menu-icon">
+          <i class="fas fa-bars menu-icon"></i>
+        </label>
+      </div> 
+    </header>
     <main>
 
 <!--Item details-->
-
       <div class="small container cart">
         <table>
           <tr>
-            <th>Product</th>
+            <th class="product">Product</th>
             <th>Quantity</th>
             <th>Subtotal</th>
           </tr>
+
+<!--Items-->
           <tr>
             <td>
               <div class="cart-info">
@@ -53,27 +80,53 @@
           </tr>
         </table>
 
+<!--Order overview-->
         <div class="total">
+          <h2>Order overview</h2>
           <table>
             <tr>
-              <td>Subtotal</td>
+              <td class="text">Subtotal</td>
               <td>1 098,- NOK</td>
             </tr>
             <tr>
-              <td>Shipping</td>
+              <td class="text">Shipping</td>
               <td>50,- NOK</td>
             </tr>
             <tr>
-              <td>Total</td>
+              <td class="text">Total</td>
               <td>1 148,- NOK</td>
             </tr>
           </table>
         </div>
 
+<!--Payment Method-->
+        <div class="total">
+          <h2>Payment method</h2>
+          <table>
+            <tr>
+              <td class="text">Debit/Credit</td>
+              <td class="pay"><i class="fab fa-cc-visa"></i></td>
+            </tr>
+            <tr>
+              <td class="text">PayPal</td>
+              <td class="pay"><i class="fab fa-cc-paypal"></i></td>
+            </tr>
+            <tr>
+              <td class="text">GiftCard</td>
+              <td class="pay"><i class="fas fa-gift"></i></td>
+            </tr>
+          </table>
+        </div>
+        <button type="submit">PLACE ORDER</button>
       </div>
-
-
     </main>
-    <footer></footer>
+
+<!--Copyright-->
+    <footer>
+      <div class="copyright">
+        <img src="images/logo.png" alt="Logo for RainyDays" class="copyright-logo" />
+        <h3 class="footer-text"><small> Copyright &copy; 2020 Charlotte Essajee. All rights reserved </small></h3>
+      </div>
+    </footer>
   </body>
 </html>

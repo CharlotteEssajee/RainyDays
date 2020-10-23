@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+.about {
+    width: 80%;
+    margin: 80px auto;
+}
+
 .flex-container {
     background-color: #f9f9f9;
     display: flex;
@@ -28,7 +33,7 @@ h1, h2, h3 {
 h1 {
     font-size: 4rem;
     text-transform: uppercase;
-    padding: 5rem;
+    padding: 3rem;
     font-weight: lighter;
 }
 
@@ -60,6 +65,22 @@ p {
 
 .name {
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.arrow {
+    position: relative;
+    font-size: 48px;
+    text-align: center;
+    padding-top: 3rem;
+    animation: bouncearrow 3s infinite;
+    color: #0a3641;
+}
+
+@keyframes bouncearrow {
+    0% { top: 0px; }
+    50% { top: 20px; }
+    100% { top: 0px; }
 }
 
 @media screen and (max-width:820px) {
