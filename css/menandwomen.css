@@ -15,26 +15,39 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  margin-bottom: 4rem;
 }
 
-.hero-text {
-  text-align: center;
+.hero-overlay {
   position: absolute;
-  top: 40%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0);
+  width: 40%;
+  right: 20%;
+  top: 5%;
+}
+
+.hero-overlay2 {
+  position: absolute;
+  width: 25%;
+  left: 5%;
+  top: 37%;
 }
 
 h1 {
-  position: relative; 
-  border-radius: 10px; 
-  font-size: 5rem;
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  font-weight: lighter;
   text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 1px;
+  font-size: 4rem;
 }
 
+h2 {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  font-weight: lighter;
+}
 
 /* items */
 .itemlist-grid {
