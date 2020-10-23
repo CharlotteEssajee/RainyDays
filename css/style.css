@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  color: #0A3641;
 }
 
 header {
@@ -23,7 +24,6 @@ header {
 
 .menu-icon {
   font-size: 2.3rem;
-  color: #0A3641;
   line-height: 50px;
   cursor: pointer;
 }
@@ -51,7 +51,6 @@ nav ul li {
 nav ul li a {
   display: inline-block;
   padding: 12px;
-  color: #0A3641;
   text-decoration: none;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -87,11 +86,12 @@ nav ul li a:hover, nav ul li a:focus {
   font-size: 1rem;
   text-align: center;
   text-transform: none;
-  background-color: white;
   margin-bottom: 1rem;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   margin-top: none;
+  background-color: #ffff;
+  color: #0A3641;
 }
 
 @media (min-width: 768px) {
