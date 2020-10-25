@@ -86,6 +86,7 @@ button:hover {
     .container {
         flex-wrap: wrap;
         padding: 0;
+        justify-items: center;
     }
 
   }
