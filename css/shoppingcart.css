@@ -25,7 +25,7 @@ table {
     text-align: left;
 }
 
-.cart-info p, small {
+.jacket-detail {
     margin-top: 75px;
     margin-left: 0.5rem;
 }
@@ -102,4 +102,39 @@ button {
 button:hover {
     background-color: #E1EBED;
     color: #0a3641;
+}
+
+@media screen and (max-width:760px) {
+    th, h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:710px) {
+    .cart-info img {
+        height: 220px;
+    }
+
+    .cart-info {
+        display: block;
+    }
+
+    .jacket-detail {
+        margin-top: 0;
+    }
+
+    .quantity {
+        display: none;
+    }
+}
+
+@media screen and (max-width:613px) {
+
+    th, h2 {
+        font-size: 1rem;
+    }
+
+    td {
+        font-size: 0.8rem;
+    }
 }

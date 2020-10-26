@@ -67,9 +67,7 @@ button:hover {
 }
 
 @media screen and (max-width:1030px) {
-
     .img-container {
-        justify-content: center;
         margin: 0;
         padding: 0;
     }
@@ -81,12 +79,17 @@ button:hover {
         align-content: left;
         flex-basis: 100%;
         padding-left: 0;
-      }
+    }
 
     .container {
         flex-wrap: wrap;
         padding: 0;
         justify-items: center;
     }
+}
 
-  }
+@media screen and (max-width:500px) {
+    .img-1 img {
+        height: 450px;
+    }
+}

@@ -9,117 +9,110 @@
     <meta name="description" content="Contact" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
+  <header class="menu">
+    <div class="menu-wrap">
+      <a href="index.html"> <img src="images/logo.png" alt="Logo for RainyDays" class="logo-img" /></a>
+      <input type="checkbox" id="checkbox">
+      <nav>
+        <ul>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#"><i class="fas fa-search"></i></a></li>
+          <li><a href="myaccount.html"><i class="fas fa-user-circle"></i></a></li>
+          <li><a href="shoppingcart.html"><i class="fas fa-shopping-bag"></i></a></li>
+        </ul>
+      </nav>
+      <label for="checkbox" class="menu-icon">
+        <i class="fas fa-bars menu-icon"></i>
+      </label>
+    </div> 
+  </header>
   <body>
-
-<!--Navbar-->
-    <header class="menu">
-      <div class="menu-wrap">
-        <a href="index.html"> <img src="images/logo.png" alt="Logo for RainyDays" class="logo-img" /></a>
-        <input type="checkbox" id="checkbox">
-        <nav>
-          <ul>
-            <li><a href="men.html">Men</a></li>
-            <li><a href="women.html">Women</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#"><i class="fas fa-search"></i></a></li>
-            <li><a href="myaccount.html"><i class="fas fa-user-circle"></i></a></li>
-            <li><a href="shoppingcart.html"><i class="fas fa-shopping-bag"></i></a></li>
-          </ul>
-        </nav>
-        <label for="checkbox" class="menu-icon">
-          <i class="fas fa-bars menu-icon"></i>
-        </label>
-      </div> 
-    </header>
     <main>
-      <section>
-        <div class=container>
-
-<!--Headline-->
+        <section>
+          <div class=container>
+  
+  <!--Sign In-->
           <h1>Contact</h1>
-          <p>Hi, how can we help you?</p>
-
-<!--Request-->
-          <div class="contact-box">
-          <div class="left-faq">
-            <h2>Send your request</h2>
-            <form>
-              <div class="input">
-
-<!--Name-->
-                <div class="input-text">
-                  <label>Name</label>
-                  <input type="text" placeholder="Jane Doe">
+          <p class="subhead">Hi, how can we help you?</p>
+          <div class="account-box">
+            <div class="left-account">
+              <h2>Send your request</h2>
+              <form>
+  
+  <!--Name-->
+                <div class="input">
+                  <div class="input-text">
+                    <label class="input-headline">Name</label>
+                    <input type="text" placeholder="Jane Doe">
+                  </div>
                 </div>
-
-<!--Phone-->
-                <div class="input-text">
-                  <label>Phone</label>
-                  <input type="text" placeholder="+47 12345678">
+  
+  <!--Phone-->
+                <div class="input">
+                  <div class="input-text">
+                    <label class="input-headline">Phone</label>
+                    <input type="text" placeholder="+47 12345678">
+                  </div>
                 </div>
-              </div>
-              <div class="input">
 
 <!--Email-->
-                <div class="input-text">
-                  <label>Email</label>
-                  <input type="text" placeholder="janedoe@gmail.com">
-                </div>
+                <div class="input">
+                    <div class="input-text">
+                      <label class="input-headline">Email</label>
+                      <input type="text" placeholder="janedoe@gmail.com">
+                    </div>
+                  </div>
 
 <!--Subject-->
-                <div class="input-text">
-                  <label>Subject</label>
-                  <input type="text" placeholder="Shipping">
+                <div class="input">
+                    <div class="input-text">
+                    <label class="input-headline">Subject</label>
+                    <input type="text" placeholder="Shipping">
+                    </div>
                 </div>
-              </div>
 
 <!--Messange-->
-              <label>Messange</label>
-              <textarea rows="5" placeholder="Write your messange"></textarea>
-
+                <label>Messange</label>
+                <textarea rows="5" placeholder="Write your messange"></textarea>
+                
 <!--Submit button-->
-              <button type="submit">SEND</button>
+                <button type="submit">SEND</button>
             </form>
-          </div>
-
+            </div>
+  
 <!--Contact-->
-          <div class="right-contact">
-            <h2>Reach us</h2>
-            <table>
-              <tr>
-
-<!--Company Email-->
-                <td>Email</td>
-                <td>RainyDays@gmail.com</td>
-              </tr>
-              <tr>
-
-<!--Company Phone-->
-                <td>Phone</td>
-                <td>+47 12345678</td>
-              </tr>
-              <tr>
-
-<!--Company Address-->
-                <td>Address</td>
-                <td>Dummy Address<br>
-                  Lorem Ipsum Sit Amet<br>
-                  Dummy Pin Dummy place
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </section>
+            <div class="right-contact">
+                <h3>Reach us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>RainyDays@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+47 12345678</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>Dummy Address<br>
+                        Lorem Ipsum Sit Amet<br>
+                        Dummy Pin Dummy place
+                        </td>
+                    </tr>
+                    </table>
+            </div>
+        </section>
     </main>
 
 <!--Copyright-->
     <footer>
-      <div class="copyright">
-        <img src="images/logo.png" alt="Logo for RainyDays" class="copyright-logo" />
-        <h3 class="footer-text"><small> Copyright &copy; 2020 Charlotte Essajee. All rights reserved </small></h3>
-      </div>
+        <div class="copyright">
+            <img src="images/logo.png" alt="Logo for RainyDays" class="copyright-logo" />
+            <h3 class="footer-text"><small> Copyright &copy; 2020 Charlotte Essajee. All rights reserved </small></h3>
+        </div>
     </footer>
   </body>
 </html>

@@ -101,5 +101,18 @@ p {
       flex-direction: column;
       align-content: center;
     }
-
 }  
+
+@media screen and (max-width:450px) {
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        padding: 1rem;
+    }
+
+    .about-text {
+        padding: 1rem;
+    }
+}
