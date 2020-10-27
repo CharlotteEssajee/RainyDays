@@ -53,6 +53,7 @@ h2 {
     letter-spacing: 1px;
 }
 
+/* Media Query */
 @media screen and (max-width:1120px) {
   .hero-text {
     top: 150px;

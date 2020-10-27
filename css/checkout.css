@@ -6,12 +6,14 @@
 
 .complete {
     width: 80%;
-    margin: 50px auto;
-    text-align: center;
+    margin: auto;
 }
 
-.complete img {
-    width: 400px;
+.check-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
 }
 
 h1 {

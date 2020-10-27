@@ -6,7 +6,7 @@
 body {
     background-color: #ffff;
     font-family: 'Poppins', sans-serif;
-}
+} 
 
 .container {
     width: 80%;
@@ -140,6 +140,7 @@ button:hover {
     overflow: hidden;
 }
 
+/* Media Query */
 @media screen and (max-width:860px) {
     .account-box {
         display: flex;

@@ -66,6 +66,7 @@ button:hover {
     color: #0a3641;
 }
 
+/* Media Query */
 @media screen and (max-width:1030px) {
     .img-container {
         margin: 0;
@@ -76,6 +77,8 @@ button:hover {
         display: flex;
         flex-basis: 100%;
         padding-left: 0;
+        align-items: center;
+        justify-content: center;
     }
 
     .container {
@@ -84,15 +87,14 @@ button:hover {
         align-items: center;
         justify-content: center;
     }
-
-    .detail-text {
-        align-items: center;
-        justify-content: center;
-    }
 }
 
 @media screen and (max-width:500px) {
     .img-1 img {
         height: 450px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
     }
 }
