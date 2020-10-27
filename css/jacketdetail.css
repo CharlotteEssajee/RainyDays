@@ -74,9 +74,6 @@ button:hover {
 
     .flex-container {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-content: left;
         flex-basis: 100%;
         padding-left: 0;
     }
@@ -84,7 +81,13 @@ button:hover {
     .container {
         flex-wrap: wrap;
         padding: 0;
-        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .detail-text {
+        align-items: center;
+        justify-content: center;
     }
 }
 

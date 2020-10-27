@@ -30,6 +30,10 @@ table {
     margin-left: 0.5rem;
 }
 
+.remove {
+    text-decoration: underline;
+}
+
 .cart-info img {
     height: 200px;
     margin-top: 1rem;

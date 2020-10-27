@@ -6,7 +6,7 @@
 
 .about {
     width: 80%;
-    margin: 80px auto;
+    margin: 50px auto;
 }
 
 .flex-container {
@@ -43,12 +43,12 @@ h2 {
     font-weight: lighter;
 }
 
-h3 {
+.team {
     font-size: 3rem;
     background-color: #f9f9f9;
     padding-top: 3rem;
     font-weight: lighter;
-}
+} 
 
 p {
     font-size: 1rem;
@@ -87,7 +87,7 @@ p {
         font-size: 3rem;
     }
 
-    h2, h3 {
+    h2, .team {
         font-size: 2rem;
     }
 
@@ -104,7 +104,7 @@ p {
 }  
 
 @media screen and (max-width:450px) {
-    h2, h3 {
+    h2, .team {
         font-size: 1.5rem;
     }
 
