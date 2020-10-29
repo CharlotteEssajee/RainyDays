@@ -4,6 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 1rem;
   }
 
 .hero-image2 {
@@ -104,6 +105,7 @@ h2 {
 
   .hero-image2 {
     display: block;
+    margin-bottom: 1rem;
   }
 }
 
