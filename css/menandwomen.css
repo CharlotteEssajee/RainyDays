@@ -12,6 +12,10 @@ main {
 }
 
 /* hero image*/
+.hero {
+  position: relative;
+}
+
 .hero-image {
   width: 100%;
   background-position: center;
