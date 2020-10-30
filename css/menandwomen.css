@@ -62,16 +62,16 @@ h2 {
   height: 400px;
 }
 
-.item, .item-one, .item-two, .item-three {
+.item {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit );
   margin-bottom: 4rem;
-  transition: transform 1s;
+  transition: transform 0.5s;
 }
 
-.itemlist-grid img:hover {
-  transform: scale(1.12);
+.item:hover {
+  transform: scale(1.05);
 }
 
 .itemlist-grid h3 {

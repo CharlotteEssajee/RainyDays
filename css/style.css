@@ -39,11 +39,15 @@ nav {
 }
 
 nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   list-style-type: none;
   max-height: 0;
   overflow: hidden;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 
 nav ul li {
   padding: 0 15px;
@@ -67,6 +71,7 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 #checkbox:checked ~ nav ul {
+  display: block;
   max-height: 400px;
   padding: 15px 0;
   transition: all 0.5s;

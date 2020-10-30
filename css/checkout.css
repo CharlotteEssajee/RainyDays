@@ -7,17 +7,47 @@
 .complete {
     width: 80%;
     margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.summary img {
+    width: 250px;
+    margin-top: 25px;
+}
+
+.checked img {
+    height: 200px;
 }
 
 .check-icon {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     font-size: 5rem;
+    margin-top: 50px;
+}
+
+.summary {
+    background-color: #f9f9f9;
 }
 
 h1 {
-    font-size: 1rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: lighter;
+}
+
+h2 {
+    font-weight: lighter;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.order-info {
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+
+.trace {
+    text-decoration: underline;
+    text-transform: uppercase;
+    padding: 40px;
 }
