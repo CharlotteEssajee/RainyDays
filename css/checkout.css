@@ -51,4 +51,5 @@ h2 {
     text-decoration: underline;
     text-transform: uppercase;
     padding: 40px;
+    cursor: pointer;
 }
