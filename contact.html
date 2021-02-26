@@ -19,6 +19,7 @@
           a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+    <script defer src="js/contact.js"></script>
   </head>
   <body>
 
@@ -45,7 +46,7 @@
   </header>
     <main>
 
-<!--Sign In-->
+<!--Contact form-->
         <section>
           <div class=container>
           <h1>Contact</h1>
@@ -53,46 +54,55 @@
           <div class="account-box">
             <div class="left-account">
               <h2>Send your request</h2>
-              <form>
+              <form id="contactForm">
   
 <!--Name-->
                 <div class="input">
                   <div class="input-text">
-                    <label class="input-headline">Name</label>
-                    <input type="text" placeholder="Jane Doe">
+                    <label class="input-headline">Name
+                      <input id="fullName" type="text">
+                    </label>
+                    <div class="formError" id="fullNameError">Name is required</div>
                   </div>
                 </div>
   
 <!--Phone-->
                 <div class="input">
                   <div class="input-text">
-                    <label class="input-headline">Phone</label>
-                    <input type="text" placeholder="+47 12345678">
+                    <label class="input-headline">Phone
+                      <input id="phone" type="text">
+                    </label>
+                    <div class="formError" id="phoneError">Number is required</div>
                   </div>
                 </div>
 
 <!--Email-->
                 <div class="input">
                     <div class="input-text">
-                      <label class="input-headline">Email</label>
-                      <input type="text" placeholder="janedoe@gmail.com">
+                      <label class="input-headline">Email
+                        <input id="email" type="text">
+                      </label>
+                      <div class="formError" id="emailError">Please enter a valid email address</div>
                     </div>
                   </div>
 
 <!--Subject-->
                 <div class="input">
                     <div class="input-text">
-                    <label class="input-headline">Subject</label>
-                    <input type="text" placeholder="Shipping">
+                    <label class="input-headline">Subject
+                      <input id ="subject" type="text">
+                    </label>
+                    <div class="formError" id="subjectError">The subject must be minimum 5 characters</div>
                     </div>
                 </div>
 
 <!--Messange-->
-                <label>Messange</label>
-                <textarea rows="5" placeholder="Write your messange"></textarea>
+                <label>Messange
+                  <textarea rows="4" placeholder="Write your messange"></textarea>
+                </label>
                 
 <!--Submit button-->
-                <button type="submit">SEND</button>
+                <button>Submit</button>
             </form>
             </div>
   

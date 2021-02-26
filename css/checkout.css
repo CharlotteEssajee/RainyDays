@@ -1,55 +1,61 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-color: #0a3641;
+  --secondary-color: #e1ebed;
+  --white-color: #f9f9f9;
 }
 
 .complete {
-    width: 80%;
-    margin: auto;
-    justify-content: center;
-    text-align: center;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
 }
 
 .summary img {
-    width: 250px;
-    margin-top: 25px;
+  width: 250px;
+  margin-top: 25px;
 }
 
 .checked img {
-    height: 200px;
+  height: 200px;
 }
 
 .check-icon {
-    font-size: 5rem;
-    margin-top: 50px;
+  font-size: 5rem;
+  margin-top: 50px;
 }
 
 .summary {
-    background-color: #f9f9f9;
-    margin-bottom: 50px;
+  background-color: var(--white-color);
+  margin-bottom: 50px;
 }
 
 h1 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: lighter;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: lighter;
 }
 
 h2 {
-    font-weight: lighter;
-    font-size: 1rem;
-    margin-bottom: 2rem;
+  font-weight: lighter;
+  font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
 .order-info {
-    padding-top: 40px;
-    text-transform: uppercase;
+  padding-top: 40px;
+  text-transform: uppercase;
 }
 
 .trace {
-    text-decoration: underline;
-    text-transform: uppercase;
-    padding: 40px;
-    cursor: pointer;
+  text-decoration: underline;
+  text-transform: uppercase;
+  padding: 40px;
+  cursor: pointer;
 }

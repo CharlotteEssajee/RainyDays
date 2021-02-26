@@ -1,156 +1,166 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #0a3641;
+  --secondary-color: #e1ebed;
+  --white-color: #f9f9f9;
 }
 
 body {
-    background-color: #ffff;
-    font-family: 'Poppins', sans-serif;
-} 
+  background-color: #ffff;
+  font-family: "Poppins", sans-serif;
+}
 
 .container {
-    width: 80%;
-    margin: 50px auto;
+  width: 80%;
+  margin: 50px auto;
 }
 
 .account-box {
-    background-color: #E1EBED;
-    color: white;
-    display: flex;
+  background-color: var(--secondary-color);
+  color: white;
+  display: flex;
 }
 
 .left-account {
-    flex-basis: 60%;
-    padding: 40px 60px;
+  flex-basis: 60%;
+  padding: 40px 60px;
 }
 
 .right-contact {
-    flex-basis: 40%;
-    padding: 40px;
-    background-color: #0A3641;
+  flex-basis: 40%;
+  padding: 40px;
+  background-color: var(--main-color);
 }
 
-h1, h2 {
-    margin-bottom: 2rem;
+h1,
+h2 {
+  margin-bottom: 2rem;
 }
 
 h1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    font-weight: lighter;
-    color: #0A3641;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: var(--main-color);
 }
 
 p {
-    color:#0A3641;
-    margin-top: 2rem;
+  color: var(--main-color);
+  margin-top: 2rem;
 }
 
 .account {
-    animation: account 2s forwards;
-    left: -1000px;
-    position: relative;
+  animation: account 2s forwards;
+  left: -1000px;
+  position: relative;
 }
 
 @keyframes account {
-    0% { left: -1000px; }
-    100% { left: 0px; }
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 
 .right {
-    color: #E1EBED;
+  color: var(--secondary-color);
 }
 
 .left-account h2 {
-    color: #0A3641;
+  color: var(--main-color);
 }
 
 .right-contact h2 {
-    color: #E1EBED;
+  color: var(--secondary-color);
 }
 
 .container p {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .input {
-    display: block;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+  display: block;
+  justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 input {
-    width: 100%;
-    border: none;
-    background: #E1EBED;
-    border-bottom: 1px solid #ccc;
-    outline: none;
+  width: 100%;
+  border: none;
+  background: var(--secondary-color);
+  border-bottom: 1px solid #ccc;
+  outline: none;
 }
 
 textarea {
-    width: 100%;
-    border: 1px solid #ccc;
-    outline: none;
-    padding: 0.3rem;
-    box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 0.3rem;
+  box-sizing: border-box;
 }
 
 .input-headline {
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-    display: block;
-    color: #0A3641;
-    font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  display: block;
+  color: var(--main-color);
+  font-size: 1rem;
 }
 
 button {
-    background: #0A3641;
-    width: 150px;
-    border: none;
-    outline: none;
-    color: #E1EBED;
-    font-size: 1rem;
-    height: 50px;
-    border-radius: 30px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition-duration: 0.4;
+  background: var(--main-color);
+  width: 150px;
+  border: none;
+  outline: none;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition-duration: 0.4;
 }
 
 button:hover {
-    background-color: #f9f9f9;
-    color: #0a3641;
+  background-color: var(--white-color);
+  color: var(--main-color);
 }
 
 .checkbox {
-    display: block;
-    padding-left: 15px;
-    text-indent: -15px;
-    font-size: 0.8rem;
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+  font-size: 0.8rem;
 }
 
 .checkbox input {
-    width: 17px;
-    height: 17px;
-    padding: 0;
-    margin:0;
-    vertical-align: bottom;
-    position: relative;
-    top: -1px;
-    overflow: hidden;
+  width: 17px;
+  height: 17px;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  overflow: hidden;
 }
 
 /* Media Query */
-@media screen and (max-width:860px) {
-    .account-box {
-        display: flex;
-        flex-wrap: wrap-reverse;
-        flex-direction: column;
-        align-content: center;
-    }
+@media screen and (max-width: 860px) {
+  .account-box {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    align-content: center;
+  }
 
-    .right-contact {
-        width: 100%;
-    }
-
+  .right-contact {
+    width: 100%;
+  }
 }

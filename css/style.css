@@ -2,13 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  color: #0A3641;
+  font-family: "Poppins", sans-serif;
+  color: #0a3641;
+}
+
+:root {
+  --main-color: #0a3641;
+  --secondary-color: #e1ebed;
+  --white-color: #f9f9f9;
 }
 
 header {
   height: 70px;
-  background-color: #f9f9f9;
+  background-color: var(--white-color);
   padding: 10px 0;
 }
 
@@ -31,9 +37,9 @@ header {
 
 nav {
   position: absolute;
-  background-color: #f9f9f9;
-  top:70px;
-  left:0;
+  background-color: var(--white-color);
+  top: 70px;
+  left: 0;
   width: 100%;
   z-index: +1;
 }
@@ -48,7 +54,6 @@ nav ul {
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-
 nav ul li {
   padding: 0 15px;
 }
@@ -61,8 +66,9 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-nav ul li a:hover, nav ul li a:focus {
-  background: #E1EBED;
+nav ul li a:hover,
+nav ul li a:focus {
+  background: var(--secondary-color);
   width: 100%;
 }
 
@@ -92,11 +98,11 @@ nav ul li a:hover, nav ul li a:focus {
   text-align: center;
   text-transform: none;
   margin-bottom: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   margin-top: none;
   background-color: #ffff;
-  color: #0A3641;
+  color: var(--main-color);
 }
 
 .some-icons {
@@ -111,11 +117,11 @@ nav ul li a:hover, nav ul li a:focus {
 @media (min-width: 900px) {
   .menu-icon {
     display: none;
- }
+  }
 
   nav {
     position: relative;
-    top:-10px;
+    top: -10px;
     background-color: transparent;
   }
   nav ul {
