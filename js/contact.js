@@ -1,6 +1,6 @@
 const form = document.querySelector("#contactForm");
 const fullName = document.querySelector("#fullName");
-const fullNameError = document.querySelector("fullNameError");
+const fullNameError = document.querySelector("#fullNameError");
 const phone = document.querySelector("#phone");
 const phoneError = document.querySelector("#phoneError");
 const email = document.querySelector("#email");
@@ -17,7 +17,7 @@ function validateForm(event) {
     fullNameError.style.display = "block";
   }
 
-  if (checkLength(phone.value, 8) === true) {
+  if (checkLength(phone.value, 7) === true) {
     phoneError.style.display = "none";
   } else {
     phoneError.style.display = "block";

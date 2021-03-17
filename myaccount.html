@@ -19,6 +19,7 @@
           a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+    <script defer src="js/contact.js"></script>
   </head>
   <body>
 
@@ -52,21 +53,24 @@
         <div class="account-box">
           <div class="left-account">
             <h2>Sign In</h2>
-            <form>
+            <form id ="contactForm">
 
 <!--Email-->
               <div class="input">
                 <div class="input-text">
-                  <label class="input-headline">Email</label>
-                  <input type="text" placeholder="janedoe@gmail.com">
+                  <label class="input-headline">Email
+                    <input id="email" type="text">
+                  </label>  
+                  <div class="formError" id="emailError">Please enter a valid email address</div>
                 </div>
               </div>
 
 <!--Password-->
               <div class="input">
                 <div class="input-text">
-                  <label class="input-headline">Password</label>
-                  <input type="password" placeholder="••••••••">
+                  <label class="input-headline">Password
+                    <input id="password" type="password">
+                  </label>
                 </div>
               </div>
 
@@ -74,7 +78,7 @@
               <p><a href="#" style="color:dodgerblue">Forgot Pasword?</a></p>
 
 <!--Submit button-->
-              <button type="submit">SIGN IN</button>
+              <button>SIGN IN</button>
               <p class="account">Don't have an account? 
                 <a href="signup.html" style="color: dodgerblue">
                   Sign Up</a>

@@ -122,12 +122,16 @@ button {
   border-radius: 30px;
   margin-top: 20px;
   cursor: pointer;
-  transition-duration: 0.4;
+  transition: 0.3 ease-in-out;
 }
 
 button:hover {
   background-color: var(--white-color);
   color: var(--main-color);
+}
+
+button:active {
+  transform: scale(0.9);
 }
 
 /* Media Query */
