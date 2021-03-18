@@ -66,9 +66,8 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
-  text-decoration: underline;
+nav ul li a:hover {
+  background-color: var(--secondary-color);
 }
 
 #checkbox {

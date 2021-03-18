@@ -113,8 +113,13 @@ button {
 }
 
 button:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color--);
   color: var(--main-color);
+}
+
+.registrer-btn:hover,
+.login-btn:hover {
+  background-color: #fff;
 }
 
 button:active {
