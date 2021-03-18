@@ -69,7 +69,7 @@
     <main>
       <!--Item details-->
       <div class="small container cart">
-        <table>
+        <table class="cart-items">
           <tr>
             <th class="product">Shopping bag</th>
             <th class="quantity">Quantity</th>
@@ -109,10 +109,11 @@
           </tr>
         </table>
 
+        <!--Log in/Registrer-->
         <div class="form-container">
           <div class="form-btn">
-            <span>Log in</span>
-            <span>Register</span>
+            <span onclick="login()">Log in</span>
+            <span onclick="registrer()">Register</span>
           </div>
 
           <form id="loginForm">
@@ -194,5 +195,21 @@
         </small>
       </h3>
     </footer>
+
+    <!--Js-->
+    <script>
+      var loginForm = document.getElementById("loginForm");
+      var registrerForm = document.getElementById("registrerForm");
+
+      function registrer() {
+        registrerForm.style.transform = "translateX(0px)";
+        loginForm.style.transform = "translateX(0px)";
+      }
+
+      function login() {
+        registrerForm.style.transform = "translateX(1000px)";
+        loginForm.style.transform = "translateX(800px)";
+      }
+    </script>
   </body>
 </html>

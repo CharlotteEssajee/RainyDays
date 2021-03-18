@@ -87,6 +87,10 @@ td input {
   color: var(--main-color);
 }
 
+.cart-items {
+  margin-bottom: 2rem;
+}
+
 h2 {
   font-weight: lighter;
   text-align: left;
@@ -121,24 +125,30 @@ button:active {
   background: var(--secondary-color);
   height: 300px;
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
   text-align: center;
   margin: auto;
   padding: 20px 0;
+  overflow: hidden;
 }
 
 .form-container span {
-  font-weight: bold;
-  padding: 0 10px;
+  padding: 0 20px;
   color: var(--main-color);
   cursor: pointer;
   display: inline-block;
+  font-weight: lighter;
+  font-size: 2rem;
 }
 
 .form-container form {
   padding: 0 20px;
   position: absolute;
   top: 50px;
+  margin-top: 1rem;
+  transition: 1s;
+  max-width: 500px;
 }
 
 form input {
@@ -153,13 +163,11 @@ form input {
   left: -800px;
 }
 
-#registrerForm {
-}
-
 /* Media Query */
 @media screen and (max-width: 760px) {
   th,
-  h2 {
+  h2,
+  .form-container span {
     font-size: 1.5rem;
   }
 }
@@ -184,7 +192,8 @@ form input {
 
 @media screen and (max-width: 613px) {
   th,
-  h2 {
+  h2,
+  .form-container span {
     font-size: 1rem;
   }
 
