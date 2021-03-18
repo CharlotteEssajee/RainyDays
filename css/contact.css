@@ -105,7 +105,7 @@ textarea {
 }
 
 .formError {
-  color: grey;
+  color: rgb(224, 0, 0);
   font-size: 0.7rem;
   font-style: italic;
   display: none;
