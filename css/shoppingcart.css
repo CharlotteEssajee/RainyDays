@@ -112,13 +112,13 @@ button {
   transition: 0.3s ease-in-out;
 }
 
-button:hover {
+.placeOrder:hover {
   background-color: var(--secondary-color--);
   color: var(--main-color);
 }
 
-.registrer-btn:hover,
-.login-btn:hover {
+.registrerBtn:hover,
+.loginBtn:hover {
   background-color: #fff;
 }
 
@@ -128,10 +128,9 @@ button:active {
 
 .form-container {
   background: var(--secondary-color);
-  height: 300px;
+  max-width: 500px;
+  height: 400px;
   position: relative;
-  display: flex;
-  justify-content: center;
   text-align: center;
   margin: auto;
   padding: 20px 0;
@@ -139,24 +138,27 @@ button:active {
 }
 
 .form-container span {
-  padding: 0 20px;
+  font-weight: bold;
+  padding: 0 10px;
   color: var(--main-color);
   cursor: pointer;
+  width: 100px;
   display: inline-block;
-  font-weight: lighter;
-  font-size: 2rem;
+}
+
+.form-btn {
+  display: inline-block;
 }
 
 .form-container form {
+  max-width: 500px;
   padding: 0 20px;
   position: absolute;
-  top: 50px;
-  margin-top: 1rem;
-  transition: 1s;
-  max-width: 500px;
+  top: 130px;
+  transition: transform 1s;
 }
 
-form input {
+.formInput {
   width: 100%;
   height: 30px;
   margin: 10px 0;
@@ -164,8 +166,29 @@ form input {
   border: 1px solid #ccc;
 }
 
+form button {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
 #loginForm {
-  left: -550px;
+  left: -500px;
+}
+
+#registrerForm {
+  left: 0;
+}
+
+#indicator {
+  width: 100px;
+  border: none;
+  background: var(--main-color);
+  height: 3px;
+  border-radius: 50px;
+  margin-top: 8px;
+  transition: transform 1s;
 }
 
 /* Media Query */
@@ -174,6 +197,7 @@ form input {
   h2,
   .form-container span {
     font-size: 1.5rem;
+    font-weight: bold;
   }
 }
 

@@ -114,20 +114,25 @@
           <div class="form-btn">
             <span onclick="login()">Log in</span>
             <span onclick="registrer()">Register</span>
+            <hr id="indicator" />
           </div>
 
           <form id="loginForm">
-            <input type="text" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <button class="login-btn" type="submit">Log in</button>
+            <input class="formInput" type="text" placeholder="Email" />
+            <input class="formInput" type="password" placeholder="Password" />
+            <button class="loginBtn" type="submit">Log in</button>
             <a href="">Forgot password?</a>
           </form>
 
           <form id="registrerForm">
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <input type="password" placeholder="Confirm Password" />
-            <button class="registrer-btn" type="submit">Register</button>
+            <input class="formInput" type="email" placeholder="Email" />
+            <input class="formInput" type="password" placeholder="Password" />
+            <input
+              class="formInput"
+              type="password"
+              placeholder="Confirm Password"
+            />
+            <button class="registrerBtn" type="submit">Register</button>
           </form>
         </div>
 
@@ -169,7 +174,7 @@
           </table>
         </div>
         <form method="get" action="/checkout.html">
-          <button type="submit">PLACE ORDER</button>
+          <button class="placeOrder" type="submit">PLACE ORDER</button>
         </form>
       </div>
     </main>
@@ -200,15 +205,18 @@
     <script>
       var loginForm = document.getElementById("loginForm");
       var registrerForm = document.getElementById("registrerForm");
+      var indicator = document.getElementById("indicator");
 
       function registrer() {
         registrerForm.style.transform = "translateX(0px)";
         loginForm.style.transform = "translateX(0px)";
+        indicator.style.transform = "translateX(100px)";
       }
 
       function login() {
-        registrerForm.style.transform = "translateX(800px)";
-        loginForm.style.transform = "translateX(800px)";
+        registrerForm.style.transform = "translateX(500px)";
+        loginForm.style.transform = "translateX(500px)";
+        indicator.style.transform = "translateX(0px)";
       }
     </script>
   </body>
