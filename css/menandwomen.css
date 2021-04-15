@@ -11,6 +11,20 @@ main {
   margin: 0 auto;
 }
 
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product {
+  padding: 30px 10px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 2%;
+}
+
 /* hero image*/
 .hero {
   position: relative;
