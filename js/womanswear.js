@@ -6,22 +6,26 @@ async function getProducts() {
     const response = await fetch(url);
     const getResults = await response.json();
 
-    const product = json;
+    const product = getResults;
 
     createHTML(getResults);
   } catch (error) {
-    console.log;
+    console.log(error);
   }
 }
 
 getProducts();
 
 function createHTML(products) {
-  products.forEach(function (product) {
+  const womansProducts = products.filter(function (product) {
+    return product.categories[0].slug === "womanswear";
+  });
+
+  womansProducts.forEach(function (product) {
     productContainer.innerHTML += `<a href="details.html?id=${product.id}" class="product">
-      <img src="${product.images[0].src}" alt="${product.name}">
-      <h2>${product.name}</h2>
-      <p>Price: ${product.prices.price}£</p>
-    </a>`;
+        <img src="${product.images[0].src}" alt="${product.name}">
+        <p class="productName">${product.name}</p>
+        <p class="productPrice">Price: ${product.prices.price}£</p>
+      </a>`;
   });
 }

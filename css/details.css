@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #0a3641;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+:root {
+  --main-color: #0a3641;
+  --secondary-color: #e1ebed;
+  --white-color: #f9f9f9;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  background: var(--main-color);
+  width: 150px;
+  border: none;
+  outline: none;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  height: 50px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+/* details */
+.cardDetail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px 0;
+}
+
+.imageContainer {
+  margin-left: 0 auto;
+  padding-left: 100px;
+}
+
+.productContainer {
+  margin-right: 70px;
+  max-width: 400px;
+}
+
+.cardDetail img {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  margin-right: 3rem;
+  border-radius: 1rem;
+}
+
+.priceTag {
+  margin-bottom: 20px;
+}
+
+.productDetails {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 750px) {
+  .cardDetail {
+    grid-template-columns: 1fr;
+    margin: 50px auto;
+  }
+
+  .imageContainer,
+  .productContainer {
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  .cardDetail img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .productContainer {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .cardDetail img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .productContainer {
+    max-width: 300px;
+  }
+}

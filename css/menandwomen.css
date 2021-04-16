@@ -11,6 +11,7 @@ main {
   margin: 0 auto;
 }
 
+/* products */
 .products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -18,11 +19,22 @@ main {
 
 .product {
   padding: 30px 10px;
+  text-decoration: none;
 }
 
 .product img {
   width: 100%;
   border-radius: 2%;
+}
+
+.productName {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.productPrice {
+  font-size: 1rem;
+  font-style: italic;
 }
 
 /* hero image*/
@@ -69,41 +81,7 @@ h2 {
   font-weight: lighter;
 }
 
-/* items */
-.itemlist-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 2rem;
-}
-
-.itemlist-grid img {
-  height: 400px;
-}
-
-.item {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit);
-  margin-bottom: 4rem;
-  transition: transform 0.5s;
-}
-
-.item:hover {
-  transform: scale(1.05);
-}
-
-.itemlist-grid h3 {
-  margin-top: 1rem;
-}
-
 /* Media Query */
-@media screen and (max-width: 1620px) {
-  .itemlist-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 @media screen and (max-width: 1280px) {
   .herotext {
     font-size: 3rem;
@@ -124,9 +102,8 @@ h2 {
   }
 }
 
-@media screen and (max-width: 820px) {
-  .itemlist-grid {
-    display: grid;
+@media screen and (max-width: 830px) {
+  .products {
     grid-template-columns: 1fr;
   }
 }
@@ -143,9 +120,5 @@ h2 {
   .hero-overlay {
     right: 5%;
     top: 5%;
-  }
-
-  .itemlist-grid img {
-    height: 350px;
   }
 }
