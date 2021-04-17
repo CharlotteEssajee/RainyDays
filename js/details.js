@@ -45,3 +45,9 @@ function createHtml(product) {
                                 </div>
                               </div>`;
 }
+
+function changeTitle() {
+  document.title = `${product.name}`;
+}
+
+changeTitle();
