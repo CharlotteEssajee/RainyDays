@@ -39,6 +39,12 @@ function createHtml(product) {
                                 <div class="productContainer">
                                     <h2>${product.name}</h2>
                                     <p class="priceTag">${product.prices.price}£</p>
+                                    <select>
+                                        <option>Small</option>
+                                        <option>Medium</option>
+                                        <option>Large</option>
+                                        <option>X-Large</option>
+                                    </select>
                                     <button>Add to cart</button>
                                     <h2 class="productDetails">Product Details</h2>
                                     <p class="productDescription">${product.description}</p>

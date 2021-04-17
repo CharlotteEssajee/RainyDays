@@ -49,6 +49,11 @@ body {
   }
 }
 
+select {
+  display: block;
+  margin-bottom: 30px;
+}
+
 /* button */
 button {
   background: var(--main-color);
