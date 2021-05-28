@@ -110,30 +110,32 @@
         </table>
 
         <!--Log in/Registrer-->
-        <div class="form-container">
-          <div class="form-btn">
-            <span onclick="login()">Log in</span>
-            <span onclick="registrer()">Register</span>
-            <hr id="indicator" />
+        <div class="registrationBox">
+          <div class="form-container">
+            <div class="form-btn">
+              <span onclick="login()">Log in</span>
+              <span onclick="registrer()">Register</span>
+              <hr id="indicator" />
+            </div>
+
+            <form id="loginForm">
+              <input class="formInput" type="text" placeholder="Email" />
+              <input class="formInput" type="password" placeholder="Password" />
+              <button class="loginBtn" type="submit">Log in</button>
+              <a href="">Forgot password?</a>
+            </form>
+
+            <form id="registrerForm">
+              <input class="formInput" type="email" placeholder="Email" />
+              <input class="formInput" type="password" placeholder="Password" />
+              <input
+                class="formInput"
+                type="password"
+                placeholder="Confirm Password"
+              />
+              <button class="registrerBtn" type="submit">Register</button>
+            </form>
           </div>
-
-          <form id="loginForm">
-            <input class="formInput" type="text" placeholder="Email" />
-            <input class="formInput" type="password" placeholder="Password" />
-            <button class="loginBtn" type="submit">Log in</button>
-            <a href="">Forgot password?</a>
-          </form>
-
-          <form id="registrerForm">
-            <input class="formInput" type="email" placeholder="Email" />
-            <input class="formInput" type="password" placeholder="Password" />
-            <input
-              class="formInput"
-              type="password"
-              placeholder="Confirm Password"
-            />
-            <button class="registrerBtn" type="submit">Register</button>
-          </form>
         </div>
 
         <!--Order overview-->
@@ -214,8 +216,8 @@
       }
 
       function login() {
-        registrerForm.style.transform = "translateX(500px)";
-        loginForm.style.transform = "translateX(500px)";
+        registrerForm.style.transform = "translateX(300px)";
+        loginForm.style.transform = "translateX(300px)";
         indicator.style.transform = "translateX(0px)";
       }
     </script>
