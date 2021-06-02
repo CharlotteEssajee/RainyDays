@@ -21,10 +21,8 @@ async function getId() {
     const response = await fetch(corsFix);
     const product = await response.json();
 
-    console.log(product);
     createHtml(product);
   } catch (error) {
-    console.log(error);
     detailContainer.innerHTML = error;
   }
 }

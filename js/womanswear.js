@@ -9,9 +9,7 @@ async function getProducts() {
     const product = getResults;
 
     createHTML(getResults);
-  } catch (error) {
-    console.log(error);
-  }
+  } catch (error) {}
 }
 
 getProducts();
